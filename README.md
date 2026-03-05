@@ -1,7 +1,7 @@
 # 小林 智輝（kcs-j02）
 
-北陸先端科学技術大学院大学　情報系（修士1年）。
-**AI処理の高速化**を軸に、GPUに送る**効率的なタスク分配アルゴリズム**を研究しています。  
+- 北陸先端科学技術大学院大学　情報系（修士1年）。
+- **AI処理の高速化**を軸に、GPUに送る**効率的なタスク分配アルゴリズム**を研究しています。  
 
 ---
 
@@ -32,7 +32,7 @@
 - my-master-study  
   https://github.com/kcs-j02/my-master-study
 - my-Bachelor-study
-- entrance-exam
+- entrance-exam  
   https://github.com/kcs-j02/entrance-exam
   
 ---
