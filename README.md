@@ -30,11 +30,11 @@
 
 ## Projects
 - my-master-study  
-  研究・学習のまとめ（ノート/実験/実装）  
   https://github.com/kcs-j02/my-master-study
-
-※公開できない研究コードは、概要・再現手順・疑似コードなど「見せられる形」で整理します。
-
+- my-Bachelor-study
+- entrance-exam
+  https://github.com/kcs-j02/entrance-exam
+  
 ---
 
 ## Skills
