@@ -61,6 +61,17 @@ flowchart TD
 
 現在は、NTTドコモビジネスのCRXソリューションにおける**「フロンティアAI」を参考に、生成AIによるセキュリティリスク分析から対策・効果検証までの一連の流れを疑似体験**しています。
 
+### 検証画面
+
+![SSH接続のセキュリティ検証画面](./images/ssh-security-demo.png)
+
+VMware Workstation上でKali Linux、Ubuntu Server、pfSense、Windows 11を起動し、SSH接続の制御と認証ログの分析を実施しました。
+
+- **Kali Linux（左上）：** 対策後のSSH接続がタイムアウトすることを確認
+- **Ubuntu Server（右上）：** パスワード認証から公開鍵認証への移行をログで確認
+- **pfSense（左下）：** WAN・LAN・OPT1のネットワーク構成と通信制御を確認
+- **Windows 11（右下）：** パケットフィルタの遮断ログと正常なSSH接続を比較
+
 ### 取り組み｜SSH接続設定のリスク分析・対策検証
 
 VMware Workstation上にKali Linux、Ubuntu Server、Windows 11、pfSenseを構築し、隔離した仮想ネットワークでSSH接続のセキュリティ検証を実施しました。
@@ -84,6 +95,8 @@ VMware Workstation上にKali Linux、Ubuntu Server、Windows 11、pfSenseを構�
 - **ログ分析：** pfSenseの遮断ログとUbuntuの認証ログで結果を確認
 
 生成AIの分析結果をそのまま採用するのではなく、**実際の設定・接続結果・ログと照合し、対策の妥当性を検証すること**を重視しています。
+
+この比較から、**許可された管理端末の接続は維持しつつ、許可されていない接続元は遮断される**ことを確認しました。
 
 今後はWebアプリケーションの認証・アクセス制御にも検証対象を広げ、リスクの発見から対策・効果検証までの分析力を高めていきます。
 
